@@ -1,0 +1,228 @@
+/* Global View */
+
+body{
+    font-family: 'Asap Condensed', sans-serif;
+    color: white;
+    background-color: #EBEBEB;
+    background-image: url('image/Logo-Background.png');
+    background-repeat: repeat;
+
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.container{
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 140px;
+}
+
+.header-container{
+    background-color: rgb(60, 60,60);
+    min-height: 100px;
+    /* margin-bottom: 40px; */
+    position: fixed;
+    width: 100%;
+}
+
+header{
+    max-width: 1024px;
+    /* background-color: blueviolet; */
+    min-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.col{
+    width: 30%;
+    margin-bottom: 40px;
+    background-color: rgb(43,226,147);
+
+}
+
+.col p{
+    font-size: 0.875rem;
+    padding: 20px 25px;
+    line-height: 1.25rem;
+}
+
+
+.hide-desktop-only{
+    display: none;
+}
+
+.col img{
+    width: 100%;
+    height: auto;
+}
+
+.col p::first-line{
+    font-weight: 700;
+}
+
+.mybutton{
+    padding: 10px 25px;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 20px;
+}
+
+.highlight{
+    font-weight: 700;
+}
+
+
+.mob-wrapper{
+    display: none;
+}
+
+
+
+.main2{
+    min-height: 300px;
+    padding-top: 50px;
+}
+
+.inputwrapper{
+    margin-bottom: 30px;
+}
+input[type=text]{
+    padding: 12px 20px;
+}
+input[type=text], input[type=email], textarea{
+    padding: 12px 20px;
+    width: 90%;
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: .85rem;
+    box-sizing: border-box;
+}
+h1{
+    margin-top: 5rem;
+    font-size: 3.25rem;
+    font-family: 'Asap Condensed', sans-serif;
+    margin-bottom: 1rem;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.226);
+    margin-left: 40px;
+    color: black;
+
+}
+p{
+    line-height: 1.75rem;
+    margin-bottom: 0.5rem;
+    margin-left: 40px;
+    color: black;
+
+}
+.inputwrapper p{
+    margin: 0;
+    color: black;
+
+}
+label{
+    color: black;
+
+}
+.newline{
+    display: block;
+    margin-bottom: 10px;
+}
+.margin-right-a{
+    margin-right: 20px;
+}
+
+input[type=radio]{
+    margin-right: 10px;
+}
+
+form{
+    margin: 40px 40px;
+}
+input[type=submit]{
+    margin: auto;
+}
+
+
+
+/* Tablet View */
+@media (max-width:768px){
+
+    .col{
+        width:45%;
+    }
+
+    .hide-desktop-only{
+        display: block;
+    }
+
+
+
+    /* header{
+        display: block;
+        text-align: center;
+    } */
+    .header-container{
+        position: relative;
+    }
+    .container{
+        padding-top: 20px;
+    }
+
+    nav{
+        display: none;
+    }
+    nav a{
+        display: block;
+    }
+
+
+    .logo{
+        padding: 40px 0;
+    }
+    .mybutton{
+        margin-left: 0;
+    }
+
+    .mob-wrapper{
+        display: block;
+        padding-right: 30px;
+    }
+    .mob-nav{
+        display: none;
+        position: absolute;
+        padding-top: 10px;
+    }
+
+    .navbutton{
+        display: block;
+        background-color: coral;
+        padding: 15px 30px;
+        margin-left: -70px;
+        text-align: center;
+    }
+
+}
+
+
+
+/* Mobile View */
+
+@media(max-width:400px){
+
+    .col{
+        width:100%;
+    }
+
+    .hide-mobile{
+        display: none;
+    }
+
+}
